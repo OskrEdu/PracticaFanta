@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <font face="Arial">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fanta</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" href="main.scss">
+       
+</head>
+
+<body>
+     <a img src="media/logofanta.jpg" class="logo" alt="logo" width="200" height="500"></a>
+    <header > 
+      
+        <div class="container">   
+            
+            <p style="color:#fd892a;">Fanta Company</p>
+            <nav>
+                <a href="#quienes">Quienes Somos</a>
+                <a href="#nuestros-programas">Nuestros Productos</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#contacto">Contacto</a>
+                <section>
+                <form autocomplete="off">
+                    <div>
+                        <input type="text" name="q" placeholder="Buscar">
+                    </div>
+                </form>
+            </section>
+            </nav>
+            
+        </div>
+    </header>
+    <section id="hero">
+        <h1 style="color:#ffffff;">Fanta</h1>
+    </section>
+
+    <section id="quienes">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2> <span class="color-acento"style="color:#fd892a;">¿Quienes Somos?</span></h2>
+                <p>Fanta es una marca de gaseosa, propiedad de la compañía Coca-Cola. Posee diferentes formatos de envase, y múltiples sabores. Entre ellos, los más tradicionales son el de Naranja y Limón, aunque existen más de 90 variedades distintas de Fanta en todo el mundo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Fanta Campaña</h3>
+                    <p>Fanta realiza anualmente muchas campañas de promocion donde te puedes ganar muchos premios.</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Fanta en Lata</h3>
+                    <p>Fanta dispone de gran variedad de presentaciones en este caso, en lata de consumo personal.</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Otros</h3>
+                    <p>Fanta al ser parte de la familia Coca-cola Company dispone de otros productos.</p>
+                    <button>+ Info</button>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <h3>Características</h3>
+            <ul>
+                <li>✔️ 100% Delicioso</li>
+                <li>✔️ No contiene grasa</li>
+                <li>✔️ Disponibilidad mundial</li>
+                <li>✔️ Varios Sabores</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Fanta Promociones</h2>
+        <video width="450" height="300" controls autoplay muted>
+            <source src="media/vfanta.mp4" type="video/mp4" />
+          </video>
+    </section>
+
+    <section id="contacto">
+    <div class="content">
+        <div class="contact-form">
+            <h3>Contactate<span> Con Nosotros</span></h3>
+            <form method="POST" action="data.php">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos"
+                            placeholder="Escribe tú Apellido" required pattern="[A-Za-z]+"
+                            required />
+                    </p>
+                    <p>
+                        <label for="nombre">Nombres</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"
+                            required pattern="[A-Za-z]+" required />
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                            required />
+                    </p>
+                    <p>
+                        <label for="edad">Edad</label>
+                        <input type="number" max="200" min="18" name="edad" id="edad" required />
+                    </p>
+                    <p class="block">
+                        <label for="direccion">Dirección</label>
+                        <textarea name="direccion" id="direccion" rows="3"
+                            placeholder="Dejanos tú Dirección.." minlength="5"></textarea>
+                    </p>
+                    
+                </fieldset>
+                <br />
+                <p class="button">
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Se reservan los derechos de copyright 2022</p>
+            <p>&copy; Oscar Vera</p>
+            
+        </div>
+    </footer>
+
+</body>
